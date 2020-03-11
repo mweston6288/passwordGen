@@ -1,0 +1,19 @@
+h2{
+    text-align:center
+}
+#password{
+    height: auto;
+    text-align: center;
+    font-size:auto
+}
+#password:disabled{
+    background-color:white
+}
+button{
+    width:100%;
+    border-radius: 30px;
+    background-color: brown;
+}
+#copy:disabled{
+    background-color: gray
+}
