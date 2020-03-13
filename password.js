@@ -65,7 +65,6 @@ function makePassword(string){
         }
         // convert ints to ASCII values
         string[i] = String.fromCharCode(string[i]);
-        console.log("Current string = "+ string.join(""))
         i++
     }
     // An additional precaution to ensure at least one of every char type is put in the password
@@ -101,7 +100,6 @@ function generateSpecial(){
 }
 // Create a capital, lowercase, number, and special char that will definitely be in the password
 function makeEmergencyValues(string){
-    console.log(string.join(''))
     // Determine where each item will go
     var i = Math.floor(Math.random()* this.length) 
     var j = Math.floor(Math.random()* this.length)
@@ -129,8 +127,6 @@ function makeEmergencyValues(string){
         string[l] = String.fromCharCode(generateSpecial());
 
 
-    console.log("New password is" + string.join(""))
-
 
     // string[i] = String.fromCharCode(Math.floor(Math.random() *26 + 65))
     return string;
@@ -141,7 +137,6 @@ document.getElementById("generator").addEventListener("click", function(){
 
 var string = []
 string = makePassword(string)
-console.log(string.join(''))
 document.getElementById("password").disabled = false;
 document.getElementById("password").textContent = string.join('')
 document.getElementById("password").disabled = true;
